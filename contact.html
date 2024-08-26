@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script>
+      // For validation
+      function validate() {
+        // Select the element
+        const element = document.getElementById("form1");
+        // Add a class
+        element.classList.add("was-validated");
+        // Remove a class
+        element.classList.remove("needs-validation");
+      }
+      function validate2() {
+        // Select the element
+        const form = document.getElementById("form2");
+        // Add a class
+        form.classList.add("was-validated");
+        // Remove a class
+        form.classList.remove("needs-validation");
+      }
+    </script>
+    <title>Contact - Saudi Tourism</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Saudi Tourism</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="activity.html">Activity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery/gallery1.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Kontak</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Liburan
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.traveloka.com/">Traveloka</a></li>
+            <li><a class="dropdown-item" href="https://www.tiket.com/">Tiket</a></li>
+            <li><a class="dropdown-item" href="https://www.pegipegi.com/">Pegipegi</a></li>
+            <li><a class="dropdown-item" href="https://www.booking.com/">Booking</a></li>
+            <li><a class="dropdown-item" href="https://www.agoda.com/">Agoda</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="earch">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<section id="contact" class="py-5">
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Kontak Kami</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Registration Form -->
+                <h4>Formulir Pendaftaran</h4>
+                <form action="action.php" id="form1" class="needs-validation" method="post" style="margin: 4% 0 !important; padding: 2% !important;">
+                    <fieldset>
+                        <legend>Biodata</legend>
+                    <div class="mb-3">
+                        <label for="validationFullName" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" name="nama" id="validationFullName" placeholder="Nama Lengkap" required>
+                        <div class="invalid-feedback">
+                          Please enter your fullname.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationBirthPlace" class="form-label">Tempat Lahir</label>
+                        <input type="text" class="form-control" id="validationBirthPlace" placeholder="Tempat Lahir" required>
+                        <div class="invalid-feedback">
+                          Please enter your birth place.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationBirthday" class="form-label">Tanggal Lahir</label>
+                        <input type="date" class="form-control" id="validationBirthday" placeholder="Tanggal Lahir" required>
+                        <div class="invalid-feedback">
+                          Please enter your birthday.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationAge" class="form-label">Umur</label>
+                        <input type="number" name="umur" class="form-control" id="validationAge" min="18" max="60" placeholder="Umur kamu saat ini..." title="Min 18 th dan Max 60 th." required>
+                        <div class="invalid-feedback">
+                          Please enter your valid age.
+                        </div>
+                    </div>
+                    <label class="form-check-label" for="validationGender">Jenis Kelamin</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="validationGender1" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationGender1">Laki-Laki</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" id="validationGender2" name="radio-stacked" required>
+                        <label class="form-check-label" for="validationGender2">Perempuan</label>
+                        <div class="invalid-feedback">Please choose your gender.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationReligion" class="form-label">Agama</label>
+                        <select class="form-control form-select" id="validationReligion" required>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen Protestan">Kristen Protestan</option>
+                            <option value="Kristen Katholik">Kristen Katholik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghucu">Konghucu</option>
+                            <option value="Penghayat Kepercayaan">Penghayat Kepercayaan</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationClass" class="form-label">Kelas</label>
+                        <input list="Kelas" class="form-control" id="validationClass" min="10" max="40" placeholder="Kelas" required>
+                        <datalist id="Kelas">
+                            <option value="PPLG/RPL">
+                            <option value="MPLB/MP/OTKP">
+                            <option value="TO/TKR/TKRO">
+                            <option value="PH">
+                          </datalist>
+                        <div class="invalid-feedback">
+                          Please enter your valid class.
+                        </div>
+                    </div>
+                </fieldset>
+                    <fieldset>
+                        <legend>Alamat</legend>
+                  <div class="mb-3">
+                    <label for="validationAddress" class="form-label">Alamat Lengkap</label>
+                    <input type="text" class="form-control" id="validationAddress" placeholder="Alamat" required>
+                    <div class="invalid-feedback">
+                      Please enter your address.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationRT" class="form-label">RT</label>
+                    <input type="number" min="1" max="9" class="form-control" id="validationRT" placeholder="RT" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationRW" class="form-label">RW</label>
+                    <input type="number" min="1" max="9" class="form-control" id="validationRW" placeholder="RW" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationProvince" class="form-label">Provinsi</label>
+                    <select class="form-control" id="validationProvince" required>
+                        <option value="" selected disabled>Pilih Provinsi</option>
+                        <option value="Jawa Barat">Jawa Barat</option>
+                        <option value="Jawa Tengah">Jawa Tengah</option>
+                        <option value="Jawa Timur">Jawa Timur</option>
+                        <option value="DKI Jakarta">DKI Jakarta</option>
+                        <option value="DI Yogyakarta">DI Yogyakarta</option>
+                        <option value="Banten">Banten</option>
+                        <option value="Madura">Madura</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationRegencyCity" class="form-label">Kabupaten/Kota</label>
+                    <input list="Kabupaten/Kota" class="form-control" id="validationRegencyCity" placeholder="Kabupaten/Kota" required minlength="10">
+                    <datalist id="Kabupaten/Kota">
+                        <option value="Kab. Bandung"></option>
+                        <option value="Kab. Bandung Barat"></option>
+                        <option value="Kab. Bekasi"></option>
+                        <option value="Kab. Bogor"></option>
+                        <option value="Kab. Ciamis"></option>
+                        <option value="Kab. Cianjur"></option>
+                        <option value="Kab. Cirebon"></option>
+                        <option value="Kab. Garut"></option>
+                        <option value="Kab. Indramayu"></option>
+                        <option value="Kab. Karawang"></option>
+                        <option value="Kab. Kuningan"></option>
+                        <option value="Kab. Majalengka"></option>
+                        <option value="Kab. Pangandaran"></option>
+                        <option value="Kab. Purwakarta"></option>
+                        <option value="Kab. Subang"></option>
+                        <option value="Kab. Sukabumi"></option>
+                        <option value="Kab. Sumedang"></option>
+                        <option value="Kab. Tasikmalaya"></option>
+                        <option value="Kota Bandung"></option>
+                        <option value="Kota Banjar"></option>
+                        <option value="Kota Bekasi"></option>
+                        <option value="Kota Bogor"></option>
+                        <option value="Kota Cimahi"></option>
+                        <option value="Kota Cirebon"></option>
+                        <option value="Kota Depok"></option>
+                        <option value="Kota Sukabumi"></option>
+                        <option value="Kota Tasikmalaya"></option>
+                    </datalist>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationSubDistrict" class="form-label">Kecamatan</label>
+                    <input list="Kecamatan" class="form-control" id="validationSubDistrict" placeholder="Kecamatan" required minlength="6">
+                    <datalist id="Kecamatan">
+                        <option value="Batujajar"></option>
+                        <option value="Cihampelas"></option>
+                        <option value="Cikalong Wetan"></option>
+                        <option value="Cililin"></option>
+                        <option value="Cipatat"></option>
+                        <option value="Cipeundeuy"></option>
+                        <option value="Cipongkor"></option>
+                        <option value="Cisarua"></option>
+                        <option value="Gununghalu"></option>
+                        <option value="Lembang"></option>
+                        <option value="Ngamprah"></option>
+                        <option value="Padalarang"></option>
+                        <option value="Parongpong"></option>
+                        <option value="Rongga"></option>
+                        <option value="Saguling"></option>
+                        <option value="Sindangkerta"></option>
+                    </datalist>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationVillageWard" class="form-label">Desa / Kelurahan</label>
+                    <input list="Desa/Kelurahan" class="form-control" id="validationVillageWard" placeholder="Desa / Kelurahan" required minlength="6">
+                    <datalist id="Desa/Kelurahan">
+                        <option value="Cipada"></option>
+                        <option value="Jambudipa"></option>
+                        <option value="Kertawangi"></option>
+                        <option value="Padaasih"></option>
+                        <option value="Pasirhalang"></option>
+                        <option value="Pasirlangu"></option>
+                        <option value="Sadangmekar"></option>
+                        <option value="Bojongkoneng"></option>
+                        <option value="Cilame"></option>
+                        <option value="Cimanggu"></option>
+                        <option value="Cimareme"></option>
+                        <option value="Gadobangkong"></option>
+                        <option value="Margajaya"></option>
+                        <option value="Mekarsari"></option>
+                        <option value="Ngamprah"></option>>
+                        <option value="Pakuhaji"></option>
+                        <option value="Sukatani"></option>
+                        <option value="Tanimulya"></option>
+                        <option value="Cigugur Gurang"></option>
+                        <option value="Cihanjuang"></option>
+                        <option value="Cihanjuang Rahayu"></option>
+                        <option value="Cihideung"></option>
+                        <option value="Ciwaruga"></option>
+                        <option value="Karyawangi"></option>
+                        <option value="Sariwangi"></option>
+                    </datalist>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationCodePos" class="form-label">Kode Pos</label>
+                    <input type="number" min="15000" max="50000" class="form-control" id="validationCodePos" placeholder="Kode Pos" required>
+                  </div>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Kontak</legend>
+                  <div class="mb-3">
+                    <label for="validationTel" class="form-label">Nomor Telepon</label>
+                    <input type="tel" pattern="[0-9]{11-13}" minlength="11" maxlength="13" class="form-control" id="validationTel" placeholder="08123456789" required>
+                    <div class="valid-feedback">
+                      Your phone number can be used.
+                    </div>
+                    <div class="invalid-feedback">
+                      Please enter valid phone number.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="validationEmail" placeholder="name@domain.com" required>
+                    <div class="valid-feedback">
+                      Your email can be used.
+                    </div>
+                    <div class="invalid-feedback">
+                      Please enter your valid email.
+                    </div>
+                  </div>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Akun</legend>
+                  <div class="mb-3">
+                    <label for="validationUsername" class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" id="validationUsername" placeholder="Username. must be unique enough." required>
+                    <div class="invalid-feedback">
+                      Please enter your username.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationPass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="validationPass" minlength="8" placeholder="Password" required>
+                    <div class="invalid-feedback">
+                      Please enter your password.
+                    </div>
+                  </div><div class="mb-3">
+                    <label for="validationPass" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="validationPass" minlength="8" title="Must be same with your password." placeholder="Confirm Password" required>
+                    <div class="invalid-feedback">
+                      Please enter your confirm password.
+                    </div>
+                  </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Liburan</legend>
+                    <div class="mb-3">
+                        <label for="validationTour" class="form-label">Jenis Wisata</label>
+                        <select class="form-control form-select" id="validationTour" required>
+                            <option value="Religi">Religi</option>
+                            <option value="Alam">Alam</option>
+                            <option value="Sejarah">Sejarah</option>
+                            <option value="Wisata Kota">Wisata Kota</option>
+                            <option value="Petualangan">Petualangan</option>
+                        </select>
+                    </div>
+
+                  </fieldset>
+                      <div class="form-check form-switch mb-3">
+                        <input type="checkbox" class="form-check-input" id="validationCheck" role="switch" required>
+                        <label class="form-check-label" for="validationCheck">Dengan Mengisi Formulir Ini, Saya Setuju Dengan S&K yang Berlaku.</label>
+                        <div class="invalid-feedback">You must accept the agreement before submitting.</div>
+                      </div>
+                      <div class="mb-3">
+                        <input class="btn btn-primary" type="submit" id="submit" onclick="validate()">
+                        <input class="btn btn-secondary" type="reset" id="reset">
+                      </div>
+                  </form>
+            </div>
+            <div class="col-md-6">
+                <!-- Feedback Form -->
+                <h4>Masukkan Saran &amp; Kritik</h4>
+                <form id="form2">
+                    <div class="mb-3">
+                        <label for="feedbackName" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="feedbackName" required="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedbackEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="feedbackEmail" required="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedbackMessage" class="form-label">Saran dan Kritik</label>
+                        <textarea class="form-control" id="feedbackMessage" rows="3" required=""></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="validate2()">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2024 Saudi Tourism. All Rights Reserved.</p>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="bootstrap.js"></script>
+  </body>
+</html>
